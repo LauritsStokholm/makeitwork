@@ -1,0 +1,17 @@
+Task: Create a latex file with generated gnuplots using the make utility tool.
+
+I have thought of two ways to accomplish this goal; both using cairolatex
+terminal in gnuplot.
+
+1) To generate a pdf file easily included in the latex file using graphicx.
+  Pros: Easy to customise size of plot in latex file by using the graphicx package.
+  Cons: Will not share font etc. with entire latex document by default.
+
+2) To generate a tex file (not standalone) to be included using \input in main latex file
+  Pros: Will share format settings of the mother document
+  Cons: Difficult to set size? Will have to know size, then hardcode it in
+  gnuplot?
+
+Trying the 2nd solution, I stumbled upon the following problem.
+
+Problem: Makefile seems unable to escape a double backslash sequence: \\
