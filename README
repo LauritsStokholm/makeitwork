@@ -1,4 +1,4 @@
-Task: Create a latex file with generated gnuplots using the make utility tool.
+Task: Generate a latex file with gnuplot using the make utility tool.
 
 I have thought of two ways to accomplish this goal; both using cairolatex
 terminal in gnuplot.
